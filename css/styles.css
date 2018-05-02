@@ -1,0 +1,165 @@
+﻿@font-face {
+    font-family: "rex";
+    font-weight: 600;
+    src: url("../fonts/Rex Bold Inline.otf")
+}
+
+@font-face{
+    font-family:"infinity";
+    font-weight:400;
+    src:url("../fonts/Infinity.ttf")
+
+}
+html{
+    overflow-x:hidden;
+}
+h1 {
+    font-family: "rex", monospace;
+    font-weight:600;
+    font-size:6vw;
+}
+
+h2 {
+    font-family: "infinity", monospace;
+    font-weight: 600;
+    font-size: 4vw;
+    text-align: center;
+    margin-bottom: 2%;
+}
+
+/* title styling */
+
+#title {
+    color: floralwhite;
+    width:95vw;
+    background-image: url("../images/title-background.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 15vh auto;
+    padding: 10%;
+    padding-bottom: 20vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius:50px;
+}
+#title .desc{
+    font-family:infinity, monospace;
+    font-size: 2vw;
+    font-style:italic;
+    
+}
+#lander p {
+    width: 60%;
+    font-family: "Calibri", "Helvetica", sans-serif;
+    font-weight: 300;
+    font-size: 1.4vw;
+    position: relative;
+    top: 30%;
+    left: 2%;
+}
+
+/* about styling */
+#about {
+    padding-bottom: 10vh;
+}
+
+    #about p {
+        font-family: "infinity";
+        
+        font-weight: 300;
+        font-size: 1.5vw;
+        text-align: center;
+        width: 75vw;
+        margin: 2% auto;
+    }
+
+/* work styling */
+#work {
+    width: 100vw;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.6);
+    background-image: url("../images/TvZOEa.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 7% 0;
+    border-radius:50px;
+}
+
+    #work h2 {
+        margin-bottom: 5%;
+        background: rgba(153, 153, 153, 0.6);
+    }
+
+    #work h3 {
+        font-family: rex, monospace;
+        font-weight: 400;
+        font-size: 3vw;
+        text-align: center;
+        margin-bottom: -25px;
+    }
+
+    #work .cardholder {
+        width: 70%;
+        height: 35vw;
+        background: rgba(153, 153, 153, 0.6);
+        margin: 3% auto 7% auto;
+        overflow-x: scroll;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+
+/* card styling */
+.card {
+    background: rgba(204, 204, 204, 0.55);
+    height: 100%;
+    min-width: 50%;
+    max-width: 50%;
+    color: #1a1a1a;
+    border-right: 1px solid #808080;
+    font-family: infinity, monospace;
+    font-weight: 300;
+    text-align: center;
+    position: relative;
+    border-radius: 50px;
+}
+
+    .card:first-child {
+        border-left: 1px solid #808080;
+    }
+
+    .card .card-title {
+        font-size: 2.8vw;
+        margin: 20% auto 7% auto;
+    }
+
+    .card .card-preview {
+        font-size: 1.3vw;
+        width: 80%;
+        margin: auto;
+        max-height: 20%;
+        overflow-y: auto;
+    }
+
+    .card .expand {
+        display: inline-block;
+        text-decoration: none;
+        background: #e6e6e6;
+        padding: 2% 10%;
+        border-radius: 5px;
+        transition: all 0.2s ease-in;
+        position: absolute;
+        top: 70%;
+        left: 35%;
+        color: inherit;
+    }
+
+        .card .expand:hover {
+            background: #cccccc;
+        }
+
+    .card .card-preview::-webkit-scrollbar {
+        width: 5px;
+
+    }
