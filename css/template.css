@@ -1,8 +1,4 @@
-﻿@font-face {
-    font-family: "infinity";
-    font-weight: 400;
-    src: url("../fonts/Infinity.ttf")
-}
+﻿
 img {
     width: 80vw;
 }
@@ -11,6 +7,10 @@ body {
     font-family: "Calibri", "Helvetica", sans-serif;
     font-weight: 300;
     padding: 7%;
+}
+
+.desc{
+    font-size: 2vw;
 }
 
 h1 {
@@ -30,4 +30,9 @@ img {
 
 section {
     margin-bottom: 5%;
+}
+
+hr{
+    border:1px solid black;
+    background-color:black;
 }
