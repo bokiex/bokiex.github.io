@@ -64,6 +64,9 @@ h2 {
 /* about styling */
 #about {
     padding-bottom: 10vh;
+
+    border-radius:50px;
+    margin-bottom:4vw;
 }
 
     #about p {
@@ -170,3 +173,26 @@ h2 {
         width: 5px;
 
     }
+.btn {
+    display: inline-block;
+    text-decoration: none;
+    background: white;
+    padding: 2% 10%;
+    border-radius: 5px;
+    transition: all 0.2s ease-in;
+    border-color:lightgrey;
+    text-align:center;
+
+    color:black;
+    font-size:2vw;
+    position:relative;
+    margin-left:10vw;
+    margin-bottom:5vw;
+    width:15vw;
+    height:3vw;
+}
+.btn:hover{
+    background:#cccccc;
+    border-color:lightgrey;
+    color:black;
+}
