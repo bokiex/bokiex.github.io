@@ -1,0 +1,33 @@
+﻿@font-face {
+    font-family: "infinity";
+    font-weight: 400;
+    src: url("../fonts/Infinity.ttf")
+}
+img {
+    width: 80vw;
+}
+
+body {
+    font-family: "Calibri", "Helvetica", sans-serif;
+    font-weight: 300;
+    padding: 7%;
+}
+
+h1 {
+    font-family: Calibri, Helvetica, sans-serif;
+    font-weight: 800;
+    font-size: 3.5vw;
+    margin-bottom: 2vw;
+}
+
+h2 {
+    font-size: 1.8vw;
+}
+
+img {
+    width: 80vw;
+}
+
+section {
+    margin-bottom: 5%;
+}
