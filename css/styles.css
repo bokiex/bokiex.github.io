@@ -120,7 +120,7 @@ h2 {
 
 /* card styling */
 .card {
-    background: rgb(255, 255, 255);
+    background: floralwhite;
     height: 100%;
     min-width: 50%;
     max-width: 50%;
@@ -130,8 +130,7 @@ h2 {
     font-weight: 300;
     text-align: center;
     position: relative;
-    border-top-left-radius: 50px;
-    border-top-right-radius: 50px;
+
 }
 
     .card:first-child {
