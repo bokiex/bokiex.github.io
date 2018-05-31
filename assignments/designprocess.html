@@ -3,33 +3,223 @@
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="utf-8" />
-    <link rel="stylesheet" href="../css/template.css" />
+    <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre-exp.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre-icons.min.css">
+    <link rel="stylesheet" href="../css/homepage.css" />
     <title>Design Process</title>
 </head>
 <body>
     <div class="content">
-        <section>
-            <h2>Design Process</h2>
-            <hr />
-            <p>
-                We took it to Discord to discuss about the design. We wanted
-                the essence of a card game to stay while implementing board
-                game mechanics. Together with a hint of randomness in everything
-                to spice it up a little.
-            </p>
-            <p>
-                We decided that the level design should have a linear progression
-                with a boss fight at the end. Just a regular dungeon gameplay
-                to reach the top and defeat the final boss.
-            </p>
-            <p>
-                This simple level design allowed us to focus on card mechanics
-                and design. We put in a lot more thought into the card design
-                in terms of synergy between cards and the different element themes
-                that you can follow to build a deck.
-            </p>
+        <div class="container">
+            <h1>Design Process</h1>
 
-        </section>
+            <ul class="breadcrumb">
+                <li class="breadcrumb-item">
+                    <a href="../index.html">Home</a>
+                </li>
+                <li class="breadcrumb-item">
+                    <a href="homepage.html">Designer Diary</a>
+                </li>
+                <li class="breadcrumb-item">
+                    <a href="designprocess.html">Design Process</a>
+                </li>
+            </ul>
+            <div class="divider"></div>
+            <!-- standard Accordions example -->
+            <div class="accordion">
+                <input type="checkbox" id="accordion-1" name="accordion-checkbox" hidden>
+                <label class="accordion-header" for="accordion-1" >
+                    <i class="icon icon-arrow-right mr-1"></i>
+                    The Board
+                </label>
+                <div class="accordion-body">
+                    
+                    <p>
+                        For the setup of the game, we needed to be able to track player’s Health,
+                        Armour, Gold, enemy’s Health and Armour, the Encounter card placeholders to
+                        track where the player currently is and the Level and Stage the player is on.
+
+                    </p>
+                    <p>
+                        Initially, we planned to create a circular disc for tracking mana, because the
+                        original intent of mana was to dice roll it. However, after a bit of logical
+                        thinking and debate, we came to realise that dice rolling mana was too
+                        inconsistent to provide a strategic gameplay.
+                    </p>
+                    <p>
+                        Thus we just chose to start with
+                        3 mana every turn, discarding the disc completely and making it more of a deckbuilding
+                        and synergy based game.
+                    </p>
+                    <p>
+                        We had a rough draft at the start of the game:
+                        <ul class="list">
+                            <li>
+                                Created the basis of the Encounter map where it alternates between
+                                Encounter cards that you have to resolve and choosing between two Encounter cards to resolve
+                            </li>
+                            <li>
+                                A way to track monster and player stats. We had to put a cap on the health else
+                                we would not have space for the numbers, so it was really a rough sketch. 
+                            </li>
+                            <li>
+                                A simple level design with 3 Levels for play testing, which ended up being our main
+                                prototype. We wanted to have 7 Levels in total and an extra ‘Insane’ difficulty that
+                                required you to start from Level 2 but after realising how long the average play-time took, 
+                                we ditched the idea.
+                            </li>
+                        </ul>
+                    </p>
+                    <p>
+                        We decided that the level design should have a linear progression with a boss fight at the end.
+                        Just a regular dungeon gameplay to reach the top and defeat the final boss.
+                    </p>
+                    <p>
+                        This simple level design allowed us to focus on card mechanics and design. We put in a lot
+                        more thought into the card design in terms of synergy between cards and the different element
+                        themes that you can follow to build a deck.
+                    </p>
+                    <p>
+                        That was the main idea, after a few improvements we wound up with the final product which
+                        was 4 A4 sized paper for Level, Player stats, Monster stats and Encounters.
+                    </p>
+                </div>
+            </div>
+            <div class="accordion">
+                <input type="checkbox" id="accordion-2" name="accordion-checkbox" hidden>
+                <label class="accordion-header" for="accordion-2">
+                    <i class="icon icon-arrow-right mr-1"></i>
+                    The Cards
+                </label>
+                <div class="accordion-body">
+                    <p>
+                        This is the heart of the game, it’s where all of our creativity and resources went.
+                        Each card that we came up with was balanced and checked whether it fit the theme of the 
+                        element as well as how it will play into the game. It’s not the best balancing system, 
+                        but I think we’ve put in a fair amount of effort in balancing it.
+                    </p>
+                    <h3>Deck-Building</h3>
+                    <p>
+                        We came up with a total ratio of deckbuilding cards to have which was:
+                        <ul class="list">
+                            <li>
+                                5 Offense : 3 Defense : 2 Passive
+                            </li>
+                        </ul>
+                    </p>
+                    <p>
+                        Then from there, each element had their own ratio to fit the theme of the element. 
+                        Fire had more offense, Water and Earth had more defense and Arcana had more passive, 
+                        to balance this, the other stats were reduced. 
+                    </p>
+                    <p>
+                        In doing so, we hoped to encourage building on one or two elements at most when
+                        choosing your cards. Fire spells dealt about +3 the regular mana to damage conversion rate,
+                        Water has healing abilities, Earth has blocks and Arcana has passives that synergises well 
+                        with its cards. Through building on the same element, players can bring out the best traits 
+                        of the element and synergise the cards with one another.
+                        <ul>
+                            <li>
+                                E.g: Pheonix Feather: Fire spells to do 2 more damage when combo-ed with Napalm:
+                                Deal 1 damage 4 times, deals a whopping 12 damage. 
+                            </li>
+                        </ul>
+                    </p>
+                    <p>
+                        The flavour text was also a fun part of designing these cards. Being able to come 
+                        up with quirky sentences to describe the cards made the process more endurable and less 
+                        boring. I do think we took it a tad too far though, but I’m still happy about it. 
+                    </p>
+                    <p>
+                        We tried to make all of the deckbuilding cards unique from one another, each card has 
+                        its own purpose and synergy, some bad cards that are only good when paired with a synergy card.
+                        <ul>
+                            <li>
+                                Water Retention: Deal damage equal to total Health healed this turn is a pretty useless 
+                                card on its own. But when paired with Healing Bath and Surf, both of which heals 3, it
+                                can deal a total of 12 damage. 
+                            </li>
+                            <li>
+                                Same goes for Rock Smash: Deal damage based on amount of block this turn
+                            </li>
+                        </ul>
+                    </p>
+                    <p>
+                        We wanted to put in draw cards at first, having Arcana being the draw element, but we had 
+                        a problem of having too big of a deck, there were no options to discard the bad cards. When 
+                        we added the discard option, overpowered synergies became really easy to get. Sticking with 
+                        4 cards that constantly deals a ton of damage and heals made the game really easy. Thus we 
+                        removed the draw option from the spell cards and added a draw mechanic that draws from 
+                        the deck the player has already built rather than gaining a new card.
+                    </p>
+                    <p>
+                        The ideation process for these cards are mostly just inspiration from other card games for
+                        me. Elemental spells came from the different shows I’ve watched and games I’ve played. Most 
+                        of them are basic card ideas as we did not want to introduce too many elements to keep the 
+                        game easy to learn. 
+                    </p>
+                    <h3>Treasure</h3>
+                    <p>
+                        This was a reward system created for players to gain permanent passives that will aid in 
+                        scaling into the later levels. We wanted to make it rewarding to choose for a treasure when
+                        it shows up in the Encounter map, so we thought of making them permanent for the rest of the game.
+                    </p>
+                    <p>
+                        There are also one time use treasures that can help you scale better into late game.
+                    </p>
+                    <p>
+                        Initially we wanted to make the treasures all one time, but we realised that was too 
+                        lacklustre in the long run so we changed most of them to passives.
+                    </p>
+                    <h3>Monster</h3>
+                    <p>
+                        At the start, we made the monsters really weak and dealt really little damage because we
+                        wanted it to scale into late game, but we quickly realised that the scale was also weaker than 
+                        expected, and fighting the monsters didn’t really amount to much of a challenge. 
+                    </p>
+                    <p>
+                        For the second iteration of monsters, we increased the health and damage significantly, 
+                        taking into account the heal and block players can get from spells. The scaling system was to
+                        make it multiply by the Level the player is currently on. 
+                    </p>
+                    <p>
+                        We tried not to base the health off of dice roll too much, but just nice enough so that
+                        getting a high roll does not end the game for you and getting a low roll still provides a bit of a challenge.
+                    </p>
+                    <h3>Trap</h3>
+                    <p>
+                        The trap encounters are there as a warning for players. This motivates them to keep themselves healthy '
+                        and punishes bad decisions. 
+                    </p>
+                    <p>
+                        We decided to add traps into the game as a way to spice it up. Rather than having just monsters and
+                        rewards, we wanted a way to punish the players for not considering the possibilities of traps. Keep 
+                        them on the edge and introduce another excitement factor.
+                    </p>
+                    <h3>Shop</h3>
+                    <p>
+                        The shop is where players get to spend their gold. They can choose whether to spend it on discarding 
+                        cards or adding more cards into their deck or adding a treasure to your deck.
+                    </p>
+                    <p>
+                        Initially we wanted to make the shop a permanent thing where you can spend your gold anytime but
+                        we figured having it made into an encounter would make more sense story wise because a shop following
+                        you around seems absurd.
+                    </p>
+                    <p>Question Mark</p>
+                    <p>
+                        These encounters are for players to choose A or B. Most of them are either to interact with 
+                        the item or leave it.
+                    </p>
+                    <p>
+                        Provides reward or punishment for interacting with it based on dice roll. It’s a way for players to
+                        get a headstart in the game if they are willing to risk health, gold or treasures for it. 
+                    </p>
+                </div>
+            </div>
+        </div>
     </div>
+
 </body>
 </html>

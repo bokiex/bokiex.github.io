@@ -1,5 +1,6 @@
-﻿html, body {
-    height: 100%;
+﻿html, body{
+    height:100%;
+    position:relative;
 }
 
 .off-canvas .off-canvas-sidebar {
@@ -7,24 +8,15 @@
     width: 14rem;
 }
 
-.off-canvas-sidebar {
-    height: 100%;
-    position: fixed;
-}
 
 .content-nav {
     right: 0;
-    position: fixed;
+    
     padding-left: 100px;
 }
 
 .content {
     position: relative;
-}
-
-.avatar-main {
-    height: 6rem;
-    width: 6rem;
 }
 
 .sidebar-container {
@@ -108,4 +100,25 @@ footer {
 }
 .tile-title{
     font-size:1.3rem;
+}
+label {
+    font-size: 32px;
+    font-weight:500;
+}
+
+.list li {
+    padding-left:2em;
+    text-indent: -1em;
+
+}
+.accordion-body h3 {
+    font-size: 20px;
+    max-height: 2000px;
+    color: lightslategray;
+    padding-bottom: 30px;
+}
+.accordion {
+    height:100%;
+    position:relative;
+    padding-bottom: 30px;
 }
