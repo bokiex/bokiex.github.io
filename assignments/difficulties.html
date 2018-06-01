@@ -1,0 +1,119 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../css/spectre.css">
+    <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre-exp.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre-icons.min.css">
+    <link rel="stylesheet" href="../css/homepage.css" />
+    <title>Difficulties</title>
+</head>
+<body>
+    <div class="content">
+        <div class="container">
+            <h1>Difficulties</h1>
+
+            <ul class="breadcrumb">
+                <li class="breadcrumb-item">
+                    <a href="../index.html">Home</a>
+                </li>
+                <li class="breadcrumb-item">
+                    <a href="homepage.html">Designer Diary</a>
+                </li>
+                <li class="breadcrumb-item">
+                    <a href="difficulties.html">Difficulties</a>
+                </li>
+            </ul>
+            <div class="divider"></div>
+            <h2>Balancing the game</h2>
+            <p>
+                One of the first issues we had was balancing the game. Of course that goes 
+                for all games, but I was pretty inexperienced in balancing card games so it 
+                was quite a tough thing for me to pick up.
+            </p>
+            <p>
+                We countered this by dictating how much 1 mana is worth. Then, we add more 
+                attributes based on the element of the card.
+            </p>
+            <p>
+                For example, Fire cards have more damage, Water cards have more healing and
+                Earth cards have more block. 
+            </p>
+            <h2>Random Number Generator (RNG)</h2>
+            <p>
+                RNG has always been a factor in card games. Good card games have balance 
+                between RNG and strategic gameplay. When balanced, they go hand in hand together
+                to make a fun and strategic game. An example would be Hearthstone. 
+            </p>
+            <p>
+                Our game was a card game after all, so we had some RNG in it to make it more
+                interactive. However, the first prototype of the game we made for playtesting had
+                way too many RNG factors in it. Almost all actions had some form of RNG in it. The 
+                player’s draw, the spell’s damage, the monster’s health, the monster’s damage and 
+                the question mark encounter cards. This made the game stale and boring in the sense
+                that thinking was not encouraged and rolling a high roll was one if not the only way to win.
+            </p>
+            <p>
+                After the playtest, we sat down and discussed. From there we decided to reduce many of
+                the RNG factors and calculations that included dice rolls were adapted to reduce the range
+                of numbers the monster’s health can be, allowing us to better predict and scale the monster. 
+            </p>
+            <p>
+                We still kept the rolling to resolve Question Mark encounters as it was a fun option to
+                have but we changed the deckbuilding to having a constant pool of 3 cards to choose from that
+                the player can either choose one from it, take a random from the deck and refresh the 3 or 
+                just refresh the 3. It added a little bit of strategic deckbuilding into the game that I 
+                think was much needed.
+            </p>
+            <h2>Deck-Building</h2>
+            <p>
+                Lastly, the deckbuilding aspect of the game was kind of lacklustre during the playtest in
+                the sense that there wasn't much opportunities to gain and discard cards. That resulted in
+                the huge variety of cards to be untapped throughout the entire game and the starting cards
+                playing a bigger impact on the game rather than the other cards.
+            </p>
+            <p>
+                Combos and synergies were also harder to get and set up as there were very little cards to
+                work with, so unless the player is lucky, there's no chance of getting the cards players
+                need for a good combo.
+            </p>
+            <p>
+                To solve this issue, we decided to allow players to draw a card after every encounter, 
+                but we soon realised that led to too many cards in hand, so we had to come up with ways to 
+                discard cards. We added the option to either discard a card or draw a card after every encounter.
+            </p>
+            <p>
+                However, we noticed that it made deckbuilding too easy. Players can get overpowered synergy cards
+                and just discard the useless ones in order to keep drawing the same synergy cards. It broke the
+                game. Thus we changed it to allowing draws only when players defeat a monster and after every trap.
+            </p>
+            <h2>Starter Decks</h2>
+            <p>
+                Originally, the intent of starter decks was to have it elementless (Arcana). We wanted it to
+                be basic and encourage players to build cards of other elements together with Arcana cards. 
+                But I think the starting deck came out as a little too overpowered.
+            </p>
+            <p>
+                I suggested an idea of having different elemental starter decks but we were too short of time 
+                to make it, so we just stuck with the overpowered starter deck. This had a few problems in itself
+                as players would be breezing through stages in Level 1.
+            </p>
+            <p>
+                Arcana cards also had more value because they can synergise with the starter deck of 8 cards, 
+                which is pretty broken when paired together with Arcane Coupon: Reduce all Arcana spells by 1 cost. 
+            </p>
+            <p>
+                This was one of the difficulties we did not manage to come around to. I think we should’ve had 
+                different elemental starter decks but it’s hard to come up with card designs on the go and under 
+                stress of all the other assignments, it was practically impossible for us to make a deck for each 
+                of the elements. 
+            </p>
+            <p>
+                The starter deck was also supposed to be slightly underpowered to compensate for the early 
+                monster’s scaling, but we did not get around to that as well.
+            </p>
+        </div>
+    </div>
+</body>
+</html>

@@ -8,7 +8,7 @@ body {
 }
 
 .desc{
-    font-size: 2vw;
+    font-size: 18px;
 }
 
 h1 {
@@ -23,7 +23,7 @@ h2 {
 }
 
 h3{
-    font-size:1px;
+    font-size:16px;
 }
 
 img {
@@ -39,8 +39,5 @@ hr{
     background-color:black;
 }
 .content{
-    font-size:16px;
-}
-.container p{
-    font-size:20px;
+    padding:16px 20px 16px; 20px;
 }

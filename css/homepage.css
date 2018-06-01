@@ -111,14 +111,16 @@ label {
     text-indent: -1em;
 
 }
+.accordion-body {
+    max-height: 60rem;
+}
 .accordion-body h3 {
     font-size: 20px;
-    max-height: 2000px;
     color: lightslategray;
     padding-bottom: 30px;
 }
 .accordion {
     height:100%;
-    position:relative;
+    position: relative;
     padding-bottom: 30px;
 }
