@@ -25,7 +25,65 @@
                 </li>
             </ul>
             <div class="divider"></div>
-            <h2></h2>
+            <p>
+                On this week's episode, we look at the development of more grapple bugfixes, new mechanics, traps and levels. We found new bugs for the grapple. Player can float when grappling if they release the grapple before it collides with the player, and shoots out another one. What is a week without a grapple bug popping up?
+            </p>
+            <p>
+                In other news, keys and lock, chest and potion and lives mechanic implemented! All of these were done by dear Cheng En and Ernest.<br> Extremely proud to have them as teammates. 10/10 -IGN. 
+            </p>
+            <h2>Grapple bugfix</h2>
+            <div class="divider"></div>
+            <p>
+                This bug had me confused for a good week, until I had another epiphany. I think it's become a common occurrence to just pace around my house for a good half hour until I figure something out. The way I bugfix GameMaker code now is to just roleplay as a machine and try and visualise what happens. Worked well so far I must say. Figured it out in 10 minutes when I sat down and seriously thought about it.
+            </p>
+            <p>
+                Okay but honestly, it has been a tough bug to fix. It was essentially the speed of the player not being set to 0 when a new grapple was created. I had to figure out where to check for new grapple creation, and where to set the speed to 0. The mental gymnastics I did to figure it out has to be at least olympic level. 
+            </p>
+            <p>
+                Another problem was the grapple not disappearing after player collides with the wall. After I managed to 'fix' it by destroying the grapple when player collides with the wall, I realise the player cannot grapple when on the wall. Heartbreaking to remove all the code after all that. Add that bug to the list of things we cannot fix. 
+            </p>
+            <h2>New MECHANICS!</h2>
+            <div class="divider"></div>
+            <h4>Keys and locks</h4>
+            <p>
+                To introduce more strategy into our game, we created the mechanic as discussed in week 2. I think it's a misstep because it's supposed to be an action platformer, but at this point we have very little variety of enemies that this adds more to the game than it takes away, so we decided to make it.
+            </p>
+            <h4>Chest</h4>
+            <p>
+                The chests consist of a 1-Up, a potion for healing and a key for unlocking the door. This is to complement the keys and locks mechanic and we're planning to have trap chests that spawns monsters on top of the rewards. 
+            </p>
+            <h4>Health potions and Life</h4>
+            <p>
+                Health potions heal 50 hp out of the 100 the player has, and the life potion is basically a 1-Up for the player. The player has 3 lives to start out with and can gain infinitely because we did not fix that <del>bug</del> feature
+            </p>
+            <h4>Signposts</h4>
+            <p>
+                This mechanic is going to be our main way of telling the story. I think we won't be able to come up with a solid story, but the signpost will help. As always the ever handy Shaun Spaulding comes in clutch with a tutorial. 
+            </p>
+            <h2>Traps</h2>
+            <div class="divider"></div>
+            <h4>Dart Traps!!</h4>
+            <p>
+                Ernest managed to create a dart trap. He followed a tutorial online and got it working in our game. The problem is though, the pressure plate activates all the dart traps. I might come back to fix it later but for now, we'll leave it as it is.
+            </p>
+            <h2>Removal</h2>
+            <div class="divider"></div>
+            <p>
+                Week 3 we added the jump powerup, this week we removed it. It turned out to be almost gamebreaking because our levels were designed with the current jump height in mind. If the powerup is implemented, it means we have to create a few more levels specifically for that powerup, and it adds very little value to the game in our opinion. Hence it was removed. From this experimentation, we concluded that powerups should not be implemented because the player movement is already polished enough, and it complements our levels as well. The addition of powerups is not worth us redoing our levels. 
+            </p>
+            <p>
+                Maybe if we had more time we would but with the current timeframe and the anxiety settling in, I don't think we have the time.
+            </p>
+            <h2>Levels</h2>
+            <p>
+                A proper tutorial level is created this week. The signposts serve as instructions but I doubt anyone will stop to read it. That's a problem that we cannot afford to fix right now but it's a problem alright. 
+            </p>
+            <p>
+                More levels were also added. There were supposed to be exploration as stated in week 1 but I did not expect level design to be so complex. It is extremely hard to come up with original platformer ideas. I've always thought that level design was a piece of cake, just implementing the mechanics right? Well I was proven wrong this week because I was completely STUMPED when the time came to create a level. It took me a solid hour to make a level that was hardly fun nor playable.
+            </p>
+            <p>
+                The end of this week has humbled me and gave me a whole new appreciation for level designers. 
+            </p>
         </div>
     </div>
 </body>

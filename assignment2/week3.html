@@ -25,7 +25,50 @@
                 </li>
             </ul>
             <div class="divider"></div>
-            <h2></h2>
+            <p>
+                Week 3 has been the week of progress for us. All of us made significant contribution to the project. The grapple was completed, a little buggy but otherwise fine. We removed the double jump mechanic because there were too many movement options for the player. We want the player to rely on grappling more. 
+            </p>
+            <p>
+                A controller was added to track score and basic info that helps with debugging like hspeed and vspeed. A door mechanic was introduced that allows players to go to and fro between rooms and powerups were introduced. 
+            </p>
+            <h2>Grappling Progress!!</h2>
+            <div class="divider"></div>
+            <p>
+                Bad news first, the start of week 3, we realised the grapple had to be redone. How the grapple was implemented had just no way of fixing other than completely revamping the movement of the grapple. We found out from Dr Oon (bless you) that we can use 'direction' and 'speed', built in the GameMaker, to set the player's angle for the grapple to work. 
+            </p>
+            <p>
+                The 'direction' is a builtin GameMaker command that calculates the x-axis and y-axis of the player and the point, and determines the direction where the player will move through that, and speed decides how fast the player will move in the direction specified. It is a simple way to get the angle where the player will move without complicated math-ing. 
+            </p>
+            <p>
+                Cheng En handed the grapple over to me because I did not really contribute during week 2 compared to him, and I had an epiphany on what to do using the information given by Dr Oon. So I remade the mechanic and now it works! The logic is mostly the same with a few new additional checks for when the grapple hits, when the grapple collides with the player and what happens when the player stops grappling. 
+            </p>
+            <p>
+                I also made the grapple block specific, creating another object that only the grapple can hit, instance destroying the grapple when it hits anything other than the grapple block. This made the level design easier as we can dictate where the player can and cannot grapple, and encourages more accuracy when grappling. 
+            </p>
+            <p>
+                The grapple collision where the player can enter a wall when grappling is fixed as well. Overall the grapple made significant progress in development this week so I'm quite proud of that personally.
+            </p>
+            <h2>Warping</h2>
+            <div class="divider"></div>
+            <p>
+                TELEPORTATION!!! What is this black magic sorcery!? Well, it's just normal object collision actually. With ingenious use of the creation code (100% not from tutorial), the warp can set the player's xy coordinates and room to go to.
+            </p>
+            <h2>Power Ups</h2>
+            <div class="divider"></div>
+            <p>
+                We had the idea of power ups to boost jump speed, movement and bullet damage. This week, we only added jump boost as a test. This was done by Ernest.
+            </p>
+            <p>
+                I think this idea can be implemented but the usage of it is quite limited, so maybe it will be removed. We'll see when we start developing the levels
+            </p>
+            <h2>Removals</h2>
+            <div class="divider"></div>
+            <p>
+                We removed the camera object and opted to use the view provided in the room as Ernest encountered some issues with the camera when testing. 
+            </p>
+            <p>
+                The double jump mechanic was also removed with reasons stated above. We felt that it was unneeded given the amount of mobility the player already has at their disposal. 
+            </p>
         </div>
     </div>
 </body>
